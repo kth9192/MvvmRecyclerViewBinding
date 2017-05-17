@@ -4,6 +4,7 @@
 databinding 과 mvvm 패턴을 이용한 recyclerview 만들기 샘플.
 
 - fragment에서의 recyclerview 생성
+
  Activity 랑 다르게 fragment 에서는 setcontentview 가 생성 불가이므로 onCreateViewHolder일때 xml을 붙여
 확장(inflate) 한 view를 return 해주는 것으로 fragment view 를 생성. Activity 와 마찬가지로 뷰를 보여줄
 공간이므로 recyclerview를 databinding 형식으로 생성하고 어댑터를 조립.
