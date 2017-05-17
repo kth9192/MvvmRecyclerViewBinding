@@ -10,6 +10,7 @@ databinding 과 mvvm 패턴을 이용한 recyclerview 만들기 샘플.
 공간이므로 recyclerview를 databinding 형식으로 생성하고 어댑터를 조립.
 
 - recyclerview adapter의 구성
+
  안드로이드에서 뷰는 항상 보여줄 액티비티에서 뷰를 선언해 xml을 할당하고 
 그안에 어댑터를 조립함으로 생성된다. 어댑터는 해당 뷰에서 보여줄 내용을 설정하는 것이다.
 
