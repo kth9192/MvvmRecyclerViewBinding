@@ -19,7 +19,7 @@ databinding 과 mvvm 패턴을 이용한 recyclerview 만들기 샘플.
 # onCreateViewHolder :  뷰홀더 생성
 # onBindViewHolder :  뷰홀더에 요소 설정 및 실행
 # getItemCount : 생성 아이템 갯수
-# BindingHolder : 레이아웃의 태그안에 각 구성요소를 저장해 즉시 가져오기위해 뷰 묶음으로 만들어진 것.
+# BindingHolder : 레이아웃의 태그안에 각 구성요소를 저장해 즉시 가져오기위해 뷰 묶음으로 만들어진 것. 즉,뷰홀더
 
 - databinding & mvvm 패턴에서 view 전개
 
