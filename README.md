@@ -9,19 +9,19 @@ databinding 과 mvvm 패턴을 이용한 recyclerview 만들기 샘플.
 확장(inflate) 한 view를 return 해주는 것으로 fragment view 를 생성. Activity 와 마찬가지로 뷰를 보여줄
 공간이므로 recyclerview를 databinding 형식으로 생성하고 어댑터를 조립.
 
-- recyclerview adapter의 구성
+# recyclerview adapter의 구성
 
  안드로이드에서 뷰는 항상 보여줄 액티비티에서 뷰를 선언해 xml을 할당하고 
 그안에 어댑터를 조립함으로 생성된다. 어댑터는 해당 뷰에서 보여줄 내용을 설정하는 것이다.
 
 현재 recyclerview의 구성 요소는 
 
-# onCreateViewHolder :  뷰홀더 생성
-# onBindViewHolder :  뷰홀더에 요소 설정 및 실행
-# getItemCount : 생성 아이템 갯수
-# BindingHolder : 레이아웃의 태그안에 각 구성요소를 저장해 즉시 가져오기위해 뷰 묶음으로 만들어진 것. 즉,뷰홀더
+- onCreateViewHolder :  뷰홀더 생성
+- onBindViewHolder :  뷰홀더에 요소 설정 및 실행
+- getItemCount : 생성 아이템 갯수
+- BindingHolder : 레이아웃의 태그안에 각 구성요소를 저장해 즉시 가져오기위해 뷰 묶음으로 만들어진 것. 즉,뷰홀더
 
-- databinding & mvvm 패턴에서 view 전개
+# databinding & mvvm 패턴에서 view 전개
 
 1. activity에서 view를 선언한다. 여기서는 tablayout안에 frament에서 recyclerview선언을 함.
 2. 선언당시 apapter 가 조립된다. adapter 는 뷰의 내용을 설정하는 것.
@@ -30,7 +30,7 @@ databinding 과 mvvm 패턴을 이용한 recyclerview 만들기 샘플.
 사용하겠다는 선언.
 4. viewmodel 의 memo 요소를 사용하겠다는 아이템 xml의 설정에 따라 model 에 있는 요소를 viewmodel이 제어하면서 model 데이터를 view 로 전달
 
-- 이전의 mvp로 했을때와 다른점 고찰
+# 이전의 mvp로 했을때와 다른점 고찰
 
  우선 mvp 패턴은 각 요소당 인터페이스를 하나씩 달아서 설정 해주어야 했다. 각 패턴 요소의 연결고리를 인터페이스로 규제해 주어야만 서로 간섭이 없으면서
 상호 필요한 것들만 주고 받는것이 가능했다. mvvm은 인터페이스가 필요없이 databinding을 이용해 서로를 잘 몰라도 binding 해놓은 설정에 따라 움직여주기 때문에 코드가 확실히 줄긴 했다.
